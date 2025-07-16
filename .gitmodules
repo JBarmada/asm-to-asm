@@ -1,0 +1,3 @@
+[submodule "mctoll-x86-x86"]
+	path = mctoll-x86-x86
+	url = git@github.com:JBarmada/mctoll-x86-x86-bench.git
