@@ -46,7 +46,7 @@ Run this command in your terminal first:
 #========================CONFIGURATION ==========================
 # (Default optimization is now handled by argparse)
 # Add any desired flags here as separate strings inside the list.
-CLANG_FLAGS = ['-fno-builtin-fabs']
+CLANG_FLAGS = ['-fno-builtin', '-fno-vectorize', '-fno-inline']
 #=================================================================
 
 #========================SCRIPT SETUP ========================
