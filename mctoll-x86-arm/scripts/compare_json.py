@@ -49,23 +49,22 @@ def get_problem_number(problem_name):
         return 0
 
 def generate_summary(llm_results, mctoll_results):
-    """Compares the two result sets and generates a summary report."""
+    """Compares the two result sets and generates a complete, exhaustive summary report."""
 
     all_problems = set(llm_results.keys()) | set(mctoll_results.keys())
     categories = defaultdict(list)
     llm_successes = 0
     mctoll_successes = 0
 
-    # Convert set to a list and sort numerically to iterate in order
     sorted_problems = sorted(list(all_problems), key=get_problem_number)
 
     for problem in sorted_problems:
         llm_status = llm_results.get(problem)
         mctoll_status = mctoll_results.get(problem)
 
-        if llm_status is not None and llm_status:
+        if llm_status:
             llm_successes += 1
-        if mctoll_status is not None and mctoll_status:
+        if mctoll_status:
             mctoll_successes += 1
 
         if llm_status is not None and mctoll_status is not None:
@@ -82,18 +81,16 @@ def generate_summary(llm_results, mctoll_results):
         elif mctoll_status is not None:
             categories["mctoll_only_succeeded" if mctoll_status else "mctoll_only_failed"].append(problem)
 
-    llm_beat_mctoll = categories["llm_succeeded_mctoll_failed"] + categories["llm_only_succeeded"]
-    mctoll_beat_llm = categories["mctoll_succeeded_llm_failed"] + categories["mctoll_only_succeeded"]
+    # --- Prepare all lists for printing ---
+    for key in categories:
+        categories[key] = sorted(categories[key], key=get_problem_number)
 
     total_problems = len(all_problems)
     llm_success_rate = (llm_successes / total_problems * 100) if total_problems > 0 else 0.0
     mctoll_success_rate = (mctoll_successes / total_problems * 100) if total_problems > 0 else 0.0
-
-    # Sort all lists numerically before printing
-    llm_beat_mctoll_sorted = sorted(llm_beat_mctoll, key=get_problem_number)
-    mctoll_beat_llm_sorted = sorted(mctoll_beat_llm, key=get_problem_number)
-    both_succeeded_sorted = sorted(categories["both_succeeded"], key=get_problem_number)
-    both_failed_sorted = sorted(categories["both_failed"], key=get_problem_number)
+    
+    # --- Verification Sum ---
+    total_sum = sum(len(v) for v in categories.values())
 
     summary = f"""
 Comparison Summary: LLM vs. Mctoll
@@ -104,40 +101,44 @@ Total Unique Problems Analyzed: {total_problems}
 LLM Success Rate: {llm_successes}/{total_problems} = {llm_success_rate:.2f}%
 McToll Success Rate: {mctoll_successes}/{total_problems} = {mctoll_success_rate:.2f}%
 
------------------------------------
-I. LLM Succeeded, Mctoll Failed or Did Not Attempt
------------------------------------
-Total: {len(llm_beat_mctoll)} problems
+--------------------------------------------------
+I. Problems Attempted by BOTH Tools ({len(categories["both_succeeded"]) + len(categories["both_failed"]) + len(categories["llm_succeeded_mctoll_failed"]) + len(categories["mctoll_succeeded_llm_failed"])} total)
+--------------------------------------------------
+  - Both Succeeded: {len(categories["both_succeeded"])} problems
+    Problems: {', '.join(categories["both_succeeded"]) or 'None'}
 
-Problems:
-{', '.join(llm_beat_mctoll_sorted) or 'None'}
+  - Both Failed: {len(categories["both_failed"])} problems
+    Problems: {', '.join(categories["both_failed"]) or 'None'}
 
-Breakdown:
-- LLM Succeeded / Mctoll Failed: {len(categories["llm_succeeded_mctoll_failed"])}
-- Succeeded by LLM (not attempted by Mctoll): {len(categories["llm_only_succeeded"])}
+  - LLM Succeeded, Mctoll Failed: {len(categories["llm_succeeded_mctoll_failed"])} problems
+    Problems: {', '.join(categories["llm_succeeded_mctoll_failed"]) or 'None'}
 
+  - Mctoll Succeeded, LLM Failed: {len(categories["mctoll_succeeded_llm_failed"])} problems
+    Problems: {', '.join(categories["mctoll_succeeded_llm_failed"]) or 'None'}
 
------------------------------------
-II. Mctoll Succeeded, LLM Failed or Did Not Attempt
------------------------------------
-Total: {len(mctoll_beat_llm)} problems
+--------------------------------------------------
+II. Problems Attempted ONLY by LLM ({len(categories["llm_only_succeeded"]) + len(categories["llm_only_failed"])} total)
+--------------------------------------------------
+  - Succeeded: {len(categories["llm_only_succeeded"])} problems
+    Problems: {', '.join(categories["llm_only_succeeded"]) or 'None'}
 
-Problems:
-{', '.join(mctoll_beat_llm_sorted) or 'None'}
+  - Failed: {len(categories["llm_only_failed"])} problems
+    Problems: {', '.join(categories["llm_only_failed"]) or 'None'}
 
-Breakdown:
-- Mctoll Succeeded / LLM Failed: {len(categories["mctoll_succeeded_llm_failed"])}
-- Succeeded by Mctoll (not attempted by LLM): {len(categories["mctoll_only_succeeded"])}
+--------------------------------------------------
+III. Problems Attempted ONLY by Mctoll ({len(categories["mctoll_only_succeeded"]) + len(categories["mctoll_only_failed"])} total)
+--------------------------------------------------
+  - Succeeded: {len(categories["mctoll_only_succeeded"])} problems
+    Problems: {', '.join(categories["mctoll_only_succeeded"]) or 'None'}
 
+  - Failed: {len(categories["mctoll_only_failed"])} problems
+    Problems: {', '.join(categories["mctoll_only_failed"]) or 'None'}
 
------------------------------------
-III. Overlapping Results
------------------------------------
-- Both Succeeded: {len(categories["both_succeeded"])} problems
-  Problems: {', '.join(both_succeeded_sorted) or 'None'}
-
-- Both Failed: {len(categories["both_failed"])} problems
-  Problems: {', '.join(both_failed_sorted) or 'None'}
+--------------------------------------------------
+VERIFICATION
+--------------------------------------------------
+Total in Categories: {total_sum}
+Matches Total Problems: {total_sum == total_problems}
 """
     
     return summary.strip()
