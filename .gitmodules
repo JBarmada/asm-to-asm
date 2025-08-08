@@ -3,4 +3,4 @@
 	url = git@github.com:JBarmada/mctoll-x86-x86-bench.git
 [submodule "forklift"]
 	path = forklift
-	url = https://github.com/jordiae/forklift.git
+	url = https://github.com/JBarmada/forklift
