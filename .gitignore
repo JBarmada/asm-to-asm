@@ -1,3 +1,15 @@
 arm-cross-toolchain/
 arm-sysroot/
 eval/
+IR_dataset/1MAnghaBench/
+IR_dataset/500kAnghaBench/
+IR_dataset/AnghaBench/
+IR_dataset/huggingface_ir_dataset/data/
+humaneval/
+tools/
+forklift/forklift/
+forklift/jordiae
+forklift/f_ground_truth.c
+forklift/f_predicted.ll
+forklift/test.cbringup-bench/
+bringup-bench/
