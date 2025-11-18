@@ -1,0 +1,53 @@
+Comparison Summary: Retdec vs. Mctoll
+==================================================
+
+Total Unique Problems Analyzed: 164
+
+Retdec Success Rate: 77/164 = 46.95%
+Mctoll Success Rate: 100/145 = 60.98%
+
+--------------------------------------------------
+I. Problems Attempted by BOTH Tools (145 total)
+--------------------------------------------------
+  - Both Succeeded: 57 problems
+    Problems: problem8, problem14, problem15, problem16, problem27, problem29, problem30, problem32, problem40, problem41
+     problem42, problem43, problem44, problem49, problem50, problem53, problem54, problem55, problem59, problem60
+     problem69, problem73, problem74, problem75, problem76, problem77, problem81, problem88, problem95, problem96
+     problem98, problem101, problem102, problem103, problem104, problem107, problem109, problem114, problem116, problem117
+     problem120, problem126, problem127, problem129, problem131, problem132, problem135, problem136, problem137, problem140
+     problem141, problem143, problem144, problem155, problem156, problem160, problem162
+
+  - Both Failed: 28 problems
+    Problems: problem2, problem3, problem7, problem18, problem21, problem22, problem33, problem38, problem45, problem46
+     problem48, problem51, problem56, problem58, problem64, problem72, problem89, problem93, problem100, problem115
+     problem118, problem134, problem145, problem146, problem152, problem154, problem158, problem161
+
+  - Retdec Succeeded, Mctoll Failed: 17 problems
+    Problems: problem9, problem11, problem19, problem34, problem35, problem62, problem65, problem78, problem79, problem84
+     problem86, problem99, problem105, problem110, problem122, problem130, problem153
+
+  - Mctoll Succeeded, Retdec Failed: 43 problems
+    Problems: problem4, problem10, problem13, problem17, problem23, problem24, problem25, problem26, problem31, problem37
+     problem39, problem52, problem57, problem61, problem63, problem66, problem67, problem68, problem71, problem83
+     problem85, problem87, problem90, problem91, problem92, problem94, problem97, problem106, problem108, problem119
+     problem124, problem125, problem128, problem133, problem138, problem139, problem147, problem150, problem151, problem157
+     problem159, problem163, problem164
+
+--------------------------------------------------
+II. Problems Attempted ONLY by Retdec (19 total)
+--------------------------------------------------
+  - Succeeded: 3 problems
+    Problems: problem12, problem28, problem70
+
+  - Failed: 16 problems
+    Problems: problem1, problem5, problem6, problem20, problem36, problem47, problem80, problem82, problem111, problem112
+     problem113, problem121, problem123, problem142, problem148, problem149
+
+--------------------------------------------------
+III. Problems Attempted ONLY by Mctoll (0 total)
+--------------------------------------------------
+  - Succeeded: 0 problems
+    Problems: None
+
+  - Failed: 0 problems
+    Problems: None
