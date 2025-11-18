@@ -1,0 +1,1162 @@
+{
+  "metadata": {
+    "timestamp": "2025-08-12T22:04:40.943526",
+    "optimization_level": "-O2",
+    "total_problems": 164,
+    "total_successes": 119,
+    "total_failures": 45,
+    "mctoll_successes": 99,
+    "retdec_successes": 20,
+    "successful_exe_dir": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe"
+  },
+  "results": [
+    {
+      "problem": "problem1",
+      "status": "failure",
+      "working_tool": null,
+      "timestamp": "2025-08-12T22:03:11.422631",
+      "error": "ARM cross-compilation failed: warning: overriding the module target triple with aarch64-unknown-linux-gnu [-Woverride-module]\n1 warning generated.\n/usr/bin/aarch64-linux-gnu-ld: /tmp/code-f2547b.o: in function `func0':\ntest:(.text+0x38): undefined reference to `__asm_movss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x84): undefined reference to `__asm_movss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0xc8): undefined reference to `__asm_movaps'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0xd0): undefined reference to `__asm_subss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0xdc): undefined reference to `__asm_andps'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0xe8): undefined reference to `__asm_comiss'\nclang: error: linker command failed with exit code 1 (use -v to see invocation)\n"
+    },
+    {
+      "problem": "problem2",
+      "status": "failure",
+      "working_tool": null,
+      "timestamp": "2025-08-12T22:03:11.884844",
+      "error": "ARM cross-compilation failed: warning: overriding the module target triple with aarch64-unknown-linux-gnu [-Woverride-module]\n1 warning generated.\n/usr/bin/aarch64-linux-gnu-ld: /tmp/code-f1589c.o: in function `func0':\ntest:(.text+0x4): undefined reference to `__asm_cvttss2si'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0xc): undefined reference to `__asm_pxor'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x14): undefined reference to `__asm_cvtsi2ss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x24): undefined reference to `__asm_subss'\nclang: error: linker command failed with exit code 1 (use -v to see invocation)\n"
+    },
+    {
+      "problem": "problem3",
+      "status": "failure",
+      "working_tool": null,
+      "timestamp": "2025-08-12T22:03:12.360314",
+      "error": "ARM cross-compilation failed: warning: overriding the module target triple with aarch64-unknown-linux-gnu [-Woverride-module]\n1 warning generated.\n/usr/bin/aarch64-linux-gnu-ld: /tmp/code-eb6b57.o: in function `func0':\ntest:(.text+0x4): undefined reference to `__asm_cvttss2si'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0xc): undefined reference to `__asm_pxor'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x14): undefined reference to `__asm_cvtsi2ss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x24): undefined reference to `__asm_subss'\nclang: error: linker command failed with exit code 1 (use -v to see invocation)\n"
+    },
+    {
+      "problem": "problem4",
+      "status": "failure",
+      "working_tool": null,
+      "timestamp": "2025-08-12T22:03:13.037537",
+      "error": "QEMU execution failed: problem4-arm: /home/jad/asm-to-asm/humaneval/problem4/test.c:9: int main(): Assertion `func0(case2, 6) == 0' failed.\nqemu: uncaught target signal 6 (Aborted) - core dumped\n"
+    },
+    {
+      "problem": "problem5",
+      "status": "failure",
+      "working_tool": null,
+      "timestamp": "2025-08-12T22:03:13.568306",
+      "error": "ARM cross-compilation failed: warning: overriding the module target triple with aarch64-unknown-linux-gnu [-Woverride-module]\n1 warning generated.\n/usr/bin/aarch64-linux-gnu-ld: /tmp/code-5cd13d.o: in function `func0':\ntest:(.text+0x20): undefined reference to `__asm_pxor'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x28): undefined reference to `__asm_cvtsi2ss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x34): undefined reference to `__asm_pxor'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x58): undefined reference to `__asm_addss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x6c): undefined reference to `__asm_divss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x78): undefined reference to `__asm_pxor'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x8c): undefined reference to `__asm_movss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0xb4): undefined reference to `__asm_movss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0xc0): undefined reference to `__asm_subss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0xcc): undefined reference to `__asm_andps'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0xe0): undefined reference to `__asm_addss.1'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0xf4): undefined reference to `__asm_divss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x110): undefined reference to `__asm_movaps'\nclang: error: linker command failed with exit code 1 (use -v to see invocation)\n"
+    },
+    {
+      "problem": "problem6",
+      "status": "failure",
+      "working_tool": null,
+      "timestamp": "2025-08-12T22:03:14.230691",
+      "error": "QEMU execution failed: problem6-arm: /home/jad/asm-to-asm/humaneval/problem6/test.c:25: int main(): Assertion `issame(result1, result_expected1, out_size, 7)' failed.\nqemu: uncaught target signal 6 (Aborted) - core dumped\n"
+    },
+    {
+      "problem": "problem7",
+      "status": "failure",
+      "working_tool": null,
+      "timestamp": "2025-08-12T22:03:14.932546",
+      "error": "QEMU execution failed: problem7-arm: /home/jad/asm-to-asm/humaneval/problem7/test.c:18: int main(): Assertion `issame(result, (const int[]){2, 3, 1, 3}, returnSize, 4)' failed.\nqemu: uncaught target signal 6 (Aborted) - core dumped\n"
+    },
+    {
+      "problem": "problem8",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:15.205379",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem8-arm"
+    },
+    {
+      "problem": "problem9",
+      "status": "success",
+      "working_tool": "retdec",
+      "timestamp": "2025-08-12T22:03:15.651999",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem9-arm"
+    },
+    {
+      "problem": "problem10",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:15.928766",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem10-arm"
+    },
+    {
+      "problem": "problem11",
+      "status": "success",
+      "working_tool": "retdec",
+      "timestamp": "2025-08-12T22:03:16.420049",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem11-arm"
+    },
+    {
+      "problem": "problem12",
+      "status": "success",
+      "working_tool": "retdec",
+      "timestamp": "2025-08-12T22:03:16.992729",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem12-arm"
+    },
+    {
+      "problem": "problem13",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:17.253931",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem13-arm"
+    },
+    {
+      "problem": "problem14",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:17.489890",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem14-arm"
+    },
+    {
+      "problem": "problem15",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:17.765380",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem15-arm"
+    },
+    {
+      "problem": "problem16",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:18.030158",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem16-arm"
+    },
+    {
+      "problem": "problem17",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:18.280664",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem17-arm"
+    },
+    {
+      "problem": "problem18",
+      "status": "failure",
+      "working_tool": null,
+      "timestamp": "2025-08-12T22:03:18.933043",
+      "error": "ARM cross-compilation failed: warning: overriding the module target triple with aarch64-unknown-linux-gnu [-Woverride-module]\n1 warning generated.\n/usr/bin/aarch64-linux-gnu-ld: /tmp/code-857059.o: in function `func0':\ntest:(.text+0x4): undefined reference to `__readfsqword'\n/usr/bin/aarch64-linux-gnu-ld: /tmp/code-857059.o: in function `function_30':\ntest:(.text+0x74): undefined reference to `__readfsqword'\nclang: error: linker command failed with exit code 1 (use -v to see invocation)\n"
+    },
+    {
+      "problem": "problem19",
+      "status": "success",
+      "working_tool": "retdec",
+      "timestamp": "2025-08-12T22:03:19.345319",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem19-arm"
+    },
+    {
+      "problem": "problem20",
+      "status": "failure",
+      "working_tool": null,
+      "timestamp": "2025-08-12T22:03:19.874036",
+      "error": "ARM cross-compilation failed: /home/jad/asm-to-asm/combined-x86-arm/artifacts/retdec/problem20/code.o.ll:349:3: error: wrong number of indexes, expected 6\n  349 |   uselistorder i64 0, { 6, 7, 0, 1, 2, 5, 4, 3 }\n      |   ^\n1 error generated.\n"
+    },
+    {
+      "problem": "problem21",
+      "status": "failure",
+      "working_tool": null,
+      "timestamp": "2025-08-12T22:03:20.497235",
+      "error": "ARM cross-compilation failed: warning: overriding the module target triple with aarch64-unknown-linux-gnu [-Woverride-module]\n1 warning generated.\n/usr/bin/aarch64-linux-gnu-ld: /tmp/code-caadf8.o: in function `func0':\ntest:(.text+0x28): undefined reference to `__asm_movss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x34): undefined reference to `__asm_movss.1'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x44): undefined reference to `__asm_movss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x50): undefined reference to `__asm_movss.1'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x74): undefined reference to `__asm_movss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x88): undefined reference to `__asm_movss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0xa0): undefined reference to `__asm_movss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0xb4): undefined reference to `__asm_movss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0xc8): undefined reference to `__asm_comiss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0xe0): undefined reference to `__asm_comiss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0xf0): undefined reference to `__asm_movss.1'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x104): undefined reference to `__asm_movss.1'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x180): undefined reference to `__asm_movss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x18c): undefined reference to `__asm_movaps'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x194): undefined reference to `__asm_subss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x1a0): undefined reference to `__asm_andps'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x1bc): undefined reference to `__asm_comiss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x1d4): undefined reference to `__asm_movss.1'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x1e4): undefined reference to `__asm_movss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x1f8): undefined reference to `__asm_movaps'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x20c): undefined reference to `__asm_movss.1'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x25c): undefined reference to `__asm_movss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x268): undefined reference to `__asm_movaps'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x270): undefined reference to `__asm_subss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x27c): undefined reference to `__asm_andps'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x298): undefined reference to `__asm_comiss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x2ac): undefined reference to `__asm_movss.1'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x2c8): undefined reference to `__asm_movss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x2dc): undefined reference to `__asm_movaps'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x2f0): undefined reference to `__asm_movss.1'\nclang: error: linker command failed with exit code 1 (use -v to see invocation)\n"
+    },
+    {
+      "problem": "problem22",
+      "status": "failure",
+      "working_tool": null,
+      "timestamp": "2025-08-12T22:03:20.967995",
+      "error": "ARM cross-compilation failed: warning: overriding the module target triple with aarch64-unknown-linux-gnu [-Woverride-module]\n1 warning generated.\n/usr/bin/aarch64-linux-gnu-ld: /tmp/code-66aa77.o: in function `func0':\ntest:(.text+0x24): undefined reference to `__asm_movss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x44): undefined reference to `__asm_movaps'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x5c): undefined reference to `__asm_movaps'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x7c): undefined reference to `__asm_movaps'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0xa0): undefined reference to `__asm_movaps'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0xb4): undefined reference to `__asm_movss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0xc0): undefined reference to `__asm_movaps'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0xdc): undefined reference to `__asm_maxss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0xf8): undefined reference to `__asm_minss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x10c): undefined reference to `__asm_movaps'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x120): undefined reference to `__asm_movaps'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x144): undefined reference to `__asm_subss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x15c): undefined reference to `__asm_subss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x168): undefined reference to `__asm_divss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x16c): undefined reference to `__asm_movss.1'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x18c): undefined reference to `__asm_movss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x198): undefined reference to `__asm_subss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x1a4): undefined reference to `__asm_divss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x1a8): undefined reference to `__asm_movss.1'\nclang: error: linker command failed with exit code 1 (use -v to see invocation)\n"
+    },
+    {
+      "problem": "problem23",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:21.257083",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem23-arm"
+    },
+    {
+      "problem": "problem24",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:21.499531",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem24-arm"
+    },
+    {
+      "problem": "problem25",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:21.743572",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem25-arm"
+    },
+    {
+      "problem": "problem26",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:22.022472",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem26-arm"
+    },
+    {
+      "problem": "problem27",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:22.307024",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem27-arm"
+    },
+    {
+      "problem": "problem28",
+      "status": "success",
+      "working_tool": "retdec",
+      "timestamp": "2025-08-12T22:03:22.866886",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem28-arm"
+    },
+    {
+      "problem": "problem29",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:23.117866",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem29-arm"
+    },
+    {
+      "problem": "problem30",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:23.380454",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem30-arm"
+    },
+    {
+      "problem": "problem31",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:23.670765",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem31-arm"
+    },
+    {
+      "problem": "problem32",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:23.910380",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem32-arm"
+    },
+    {
+      "problem": "problem33",
+      "status": "failure",
+      "working_tool": null,
+      "timestamp": "2025-08-12T22:03:24.657258",
+      "error": "ARM cross-compilation failed: warning: overriding the module target triple with aarch64-unknown-linux-gnu [-Woverride-module]\n1 warning generated.\n/usr/bin/aarch64-linux-gnu-ld: /tmp/code-5c12f0.o: in function `func0':\ntest:(.text+0x24): undefined reference to `__asm_movsd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x2c): undefined reference to `__asm_movapd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x38): undefined reference to `__asm_pxor'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x80): undefined reference to `__asm_movsd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x98): undefined reference to `__asm_movapd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0xa8): undefined reference to `__asm_mulsd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0xb8): undefined reference to `__asm_mulsd.1'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0xd0): undefined reference to `__asm_addsd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0xfc): undefined reference to `__asm_movq'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x114): undefined reference to `__asm_movapd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x128): undefined reference to `__asm_movapd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x13c): undefined reference to `__asm_movsd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x150): undefined reference to `__asm_movsd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x16c): undefined reference to `__asm_andpd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x17c): undefined reference to `__asm_comisd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x1b8): undefined reference to `__asm_divsd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x1cc): undefined reference to `__asm_subsd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x1dc): undefined reference to `__asm_movapd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x1e8): undefined reference to `__asm_movapd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x1f4): undefined reference to `__asm_andpd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x200): undefined reference to `__asm_comisd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x218): undefined reference to `__asm_movapd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x224): undefined reference to `__asm_movapd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x24c): undefined reference to `__asm_pxor'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x254): undefined reference to `__asm_cvtsi2sd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x260): undefined reference to `__asm_mulsd.1'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x27c): undefined reference to `__asm_mulsd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x28c): undefined reference to `__asm_addsd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x2ac): undefined reference to `__asm_movapd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x2cc): undefined reference to `__asm_mulsd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x2f4): undefined reference to `__asm_divsd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x308): undefined reference to `__asm_subsd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x318): undefined reference to `__asm_movapd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x334): undefined reference to `__asm_movapd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x344): undefined reference to `__asm_mulsd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x354): undefined reference to `__asm_mulsd.1'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x36c): undefined reference to `__asm_addsd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x38c): undefined reference to `__asm_movapd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x394): undefined reference to `__asm_andpd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x3a0): undefined reference to `__asm_comisd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x3c8): undefined reference to `__asm_movapd'\nclang: error: linker command failed with exit code 1 (use -v to see invocation)\n"
+    },
+    {
+      "problem": "problem34",
+      "status": "success",
+      "working_tool": "retdec",
+      "timestamp": "2025-08-12T22:03:25.164167",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem34-arm"
+    },
+    {
+      "problem": "problem35",
+      "status": "success",
+      "working_tool": "retdec",
+      "timestamp": "2025-08-12T22:03:25.823174",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem35-arm"
+    },
+    {
+      "problem": "problem36",
+      "status": "failure",
+      "working_tool": null,
+      "timestamp": "2025-08-12T22:03:26.362512",
+      "error": "ARM cross-compilation failed: warning: overriding the module target triple with aarch64-unknown-linux-gnu [-Woverride-module]\n1 warning generated.\n/usr/bin/aarch64-linux-gnu-ld: /tmp/code-a53256.o: in function `func0':\ntest:(.text+0x24): undefined reference to `__asm_movss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x44): undefined reference to `__asm_movss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x50): undefined reference to `__asm_maxss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x54): undefined reference to `__asm_movaps'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x94): undefined reference to `__asm_movss'\nclang: error: linker command failed with exit code 1 (use -v to see invocation)\n"
+    },
+    {
+      "problem": "problem37",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:26.619858",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem37-arm"
+    },
+    {
+      "problem": "problem38",
+      "status": "failure",
+      "working_tool": null,
+      "timestamp": "2025-08-12T22:03:27.120284",
+      "error": "ARM cross-compilation failed: warning: overriding the module target triple with aarch64-unknown-linux-gnu [-Woverride-module]\n1 warning generated.\n/usr/bin/aarch64-linux-gnu-ld: /tmp/code-2b4079.o: in function `func0':\ntest:(.text+0x60): undefined reference to `__asm_movss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x64): undefined reference to `__asm_movss.1'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x9c): undefined reference to `__asm_movss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0xa0): undefined reference to `__asm_movss.1'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0xc0): undefined reference to `__asm_movss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0xc4): undefined reference to `__asm_movss.1'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x154): undefined reference to `__asm_movss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x164): undefined reference to `__asm_movss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x180): undefined reference to `__asm_comiss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x190): undefined reference to `__asm_movss.1'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x1a0): undefined reference to `__asm_movss.1'\nclang: error: linker command failed with exit code 1 (use -v to see invocation)\n"
+    },
+    {
+      "problem": "problem39",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:27.391855",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem39-arm"
+    },
+    {
+      "problem": "problem40",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:27.646111",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem40-arm"
+    },
+    {
+      "problem": "problem41",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:27.908371",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem41-arm"
+    },
+    {
+      "problem": "problem42",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:28.153186",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem42-arm"
+    },
+    {
+      "problem": "problem43",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:28.406833",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem43-arm"
+    },
+    {
+      "problem": "problem44",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:28.662325",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem44-arm"
+    },
+    {
+      "problem": "problem45",
+      "status": "failure",
+      "working_tool": null,
+      "timestamp": "2025-08-12T22:03:29.095048",
+      "error": "ARM cross-compilation failed: warning: overriding the module target triple with aarch64-unknown-linux-gnu [-Woverride-module]\n1 warning generated.\n/usr/bin/aarch64-linux-gnu-ld: /tmp/code-f8e10b.o: in function `func0':\ntest:(.text+0x14): undefined reference to `__readfsqword'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x34): undefined reference to `__readfsqword'\nclang: error: linker command failed with exit code 1 (use -v to see invocation)\n"
+    },
+    {
+      "problem": "problem46",
+      "status": "failure",
+      "working_tool": null,
+      "timestamp": "2025-08-12T22:03:29.506641",
+      "error": "ARM cross-compilation failed: warning: overriding the module target triple with aarch64-unknown-linux-gnu [-Woverride-module]\n1 warning generated.\n/usr/bin/aarch64-linux-gnu-ld: /tmp/code-745a9c.o: in function `func0':\ntest:(.text+0x4): undefined reference to `__asm_mulss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x14): undefined reference to `__asm_mulss.1'\nclang: error: linker command failed with exit code 1 (use -v to see invocation)\n"
+    },
+    {
+      "problem": "problem47",
+      "status": "failure",
+      "working_tool": null,
+      "timestamp": "2025-08-12T22:03:30.019498",
+      "error": "ARM cross-compilation failed: warning: overriding the module target triple with aarch64-unknown-linux-gnu [-Woverride-module]\n1 warning generated.\n/usr/bin/aarch64-linux-gnu-ld: /tmp/code-832a32.o: in function `func0':\ntest:(.text+0x8): undefined reference to `__readfsqword'\nclang: error: linker command failed with exit code 1 (use -v to see invocation)\n"
+    },
+    {
+      "problem": "problem48",
+      "status": "failure",
+      "working_tool": null,
+      "timestamp": "2025-08-12T22:03:30.474915",
+      "error": "ARM cross-compilation failed: warning: overriding the module target triple with aarch64-unknown-linux-gnu [-Woverride-module]\n1 warning generated.\n/usr/bin/aarch64-linux-gnu-ld: /tmp/code-d0afc9.o: in function `func0':\ntest:(.text+0x98): undefined reference to `__asm_movss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0xa0): undefined reference to `__asm_addss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0xc8): undefined reference to `__asm_mulss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x110): undefined reference to `__asm_movss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x124): undefined reference to `__asm_movss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x140): undefined reference to `__asm_comiss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x154): undefined reference to `__asm_movss.1'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x164): undefined reference to `__asm_movss.1'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x1a8): undefined reference to `__asm_movss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x1b8): undefined reference to `__asm_movss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x1d4): undefined reference to `__asm_comiss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x1e8): undefined reference to `__asm_movss.1'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x1f8): undefined reference to `__asm_movss.1'\n/usr/bin/aarch64-linux-gnu-ld: /tmp/code-d0afc9.o: in function `function_ad':\ntest:(.text+0x204): undefined reference to `__asm_movss'\nclang: error: linker command failed with exit code 1 (use -v to see invocation)\n"
+    },
+    {
+      "problem": "problem49",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:30.728935",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem49-arm"
+    },
+    {
+      "problem": "problem50",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:30.999895",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem50-arm"
+    },
+    {
+      "problem": "problem51",
+      "status": "failure",
+      "working_tool": null,
+      "timestamp": "2025-08-12T22:03:31.533161",
+      "error": "QEMU execution failed: problem51-arm: /home/jad/asm-to-asm/humaneval/problem51/test.c:24: int main(): Assertion `strcmp(encoded_str, str) == 0' failed.\nqemu: uncaught target signal 6 (Aborted) - core dumped\n"
+    },
+    {
+      "problem": "problem52",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:31.789852",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem52-arm"
+    },
+    {
+      "problem": "problem53",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:32.035715",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem53-arm"
+    },
+    {
+      "problem": "problem54",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:32.285689",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem54-arm"
+    },
+    {
+      "problem": "problem55",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:32.548940",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem55-arm"
+    },
+    {
+      "problem": "problem56",
+      "status": "failure",
+      "working_tool": null,
+      "timestamp": "2025-08-12T22:03:33.111734",
+      "error": "ARM cross-compilation failed: warning: overriding the module target triple with aarch64-unknown-linux-gnu [-Woverride-module]\n1 warning generated.\n/usr/bin/aarch64-linux-gnu-ld: /tmp/code-fb2143.o: in function `func0':\ntest:(.text+0x8): undefined reference to `__readfsqword'\nclang: error: linker command failed with exit code 1 (use -v to see invocation)\n"
+    },
+    {
+      "problem": "problem57",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:33.359891",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem57-arm"
+    },
+    {
+      "problem": "problem58",
+      "status": "failure",
+      "working_tool": null,
+      "timestamp": "2025-08-12T22:03:33.755119",
+      "error": "ARM cross-compilation failed: warning: overriding the module target triple with aarch64-unknown-linux-gnu [-Woverride-module]\n1 warning generated.\n/usr/bin/aarch64-linux-gnu-ld: /tmp/code-d34803.o: in function `func0':\ntest:(.text+0x54): undefined reference to `__asm_movss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x64): undefined reference to `__asm_movss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x80): undefined reference to `__asm_ucomiss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x94): undefined reference to `__asm_ucomiss'\nclang: error: linker command failed with exit code 1 (use -v to see invocation)\n"
+    },
+    {
+      "problem": "problem59",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:34.036397",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem59-arm"
+    },
+    {
+      "problem": "problem60",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:34.292392",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem60-arm"
+    },
+    {
+      "problem": "problem61",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:34.538168",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem61-arm"
+    },
+    {
+      "problem": "problem62",
+      "status": "success",
+      "working_tool": "retdec",
+      "timestamp": "2025-08-12T22:03:34.955501",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem62-arm"
+    },
+    {
+      "problem": "problem63",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:35.226281",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem63-arm"
+    },
+    {
+      "problem": "problem64",
+      "status": "failure",
+      "working_tool": null,
+      "timestamp": "2025-08-12T22:03:35.791533",
+      "error": "ARM cross-compilation failed: warning: overriding the module target triple with aarch64-unknown-linux-gnu [-Woverride-module]\n1 warning generated.\n/usr/bin/aarch64-linux-gnu-ld: /tmp/code-f017fb.o: in function `func0':\ntest:(.text+0x8): undefined reference to `__readfsqword'\nclang: error: linker command failed with exit code 1 (use -v to see invocation)\n"
+    },
+    {
+      "problem": "problem65",
+      "status": "success",
+      "working_tool": "retdec",
+      "timestamp": "2025-08-12T22:03:36.202925",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem65-arm"
+    },
+    {
+      "problem": "problem66",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:36.472789",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem66-arm"
+    },
+    {
+      "problem": "problem67",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:36.721760",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem67-arm"
+    },
+    {
+      "problem": "problem68",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:36.987345",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem68-arm"
+    },
+    {
+      "problem": "problem69",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:37.272101",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem69-arm"
+    },
+    {
+      "problem": "problem70",
+      "status": "success",
+      "working_tool": "retdec",
+      "timestamp": "2025-08-12T22:03:37.822131",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem70-arm"
+    },
+    {
+      "problem": "problem71",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:38.091059",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem71-arm"
+    },
+    {
+      "problem": "problem72",
+      "status": "failure",
+      "working_tool": null,
+      "timestamp": "2025-08-12T22:03:38.672030",
+      "error": "ARM cross-compilation failed: warning: overriding the module target triple with aarch64-unknown-linux-gnu [-Woverride-module]\n1 warning generated.\n/usr/bin/aarch64-linux-gnu-ld: /tmp/code-0d91ef.o: in function `func0':\ntest:(.text+0x4): undefined reference to `__asm_movaps'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x8): undefined reference to `__asm_addss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x14): undefined reference to `__asm_comiss'\nclang: error: linker command failed with exit code 1 (use -v to see invocation)\n"
+    },
+    {
+      "problem": "problem73",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:38.937464",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem73-arm"
+    },
+    {
+      "problem": "problem74",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:39.202325",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem74-arm"
+    },
+    {
+      "problem": "problem75",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:39.461630",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem75-arm"
+    },
+    {
+      "problem": "problem76",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:39.726942",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem76-arm"
+    },
+    {
+      "problem": "problem77",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:39.980171",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem77-arm"
+    },
+    {
+      "problem": "problem78",
+      "status": "success",
+      "working_tool": "retdec",
+      "timestamp": "2025-08-12T22:03:40.401372",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem78-arm"
+    },
+    {
+      "problem": "problem79",
+      "status": "success",
+      "working_tool": "retdec",
+      "timestamp": "2025-08-12T22:03:40.822458",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem79-arm"
+    },
+    {
+      "problem": "problem80",
+      "status": "failure",
+      "working_tool": null,
+      "timestamp": "2025-08-12T22:03:41.309594",
+      "error": "ARM cross-compilation failed: /home/jad/asm-to-asm/combined-x86-arm/artifacts/retdec/problem80/code.o.ll:127:3: error: wrong number of indexes, expected 3\n  127 |   uselistorder i64 0, { 3, 0, 4, 1, 2 }\n      |   ^\n1 error generated.\n"
+    },
+    {
+      "problem": "problem81",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:41.549619",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem81-arm"
+    },
+    {
+      "problem": "problem82",
+      "status": "failure",
+      "working_tool": null,
+      "timestamp": "2025-08-12T22:03:42.111609",
+      "error": "ARM cross-compilation failed: warning: overriding the module target triple with aarch64-unknown-linux-gnu [-Woverride-module]\n1 warning generated.\n/usr/bin/aarch64-linux-gnu-ld: /tmp/code-608062.o: in function `func0':\ntest:(.text+0x44): undefined reference to `__asm_movsd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x6c): undefined reference to `__asm_movsd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x84): undefined reference to `__asm_movsd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x8c): undefined reference to `global_var_178'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x90): undefined reference to `global_var_180'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x94): undefined reference to `global_var_178'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x98): undefined reference to `global_var_180'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x9c): undefined reference to `global_var_188'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0xa0): undefined reference to `global_var_188'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0xbc): undefined reference to `global_var_190'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0xc4): undefined reference to `global_var_190'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0xc8): undefined reference to `global_var_1a0'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0xd0): undefined reference to `global_var_198'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0xd8): undefined reference to `global_var_198'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0xdc): undefined reference to `global_var_1a0'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0xec): undefined reference to `global_var_1a8'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0xf4): undefined reference to `global_var_1a8'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0xf8): undefined reference to `global_var_1b8'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x100): undefined reference to `global_var_1b0'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x108): undefined reference to `global_var_1b0'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x10c): undefined reference to `global_var_1b8'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x154): undefined reference to `__asm_pxor'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x15c): undefined reference to `__asm_cvtss2sd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x170): undefined reference to `__asm_comisd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x18c): undefined reference to `__asm_comisd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x19c): undefined reference to `__asm_comisd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x1ac): undefined reference to `__asm_comisd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x1bc): undefined reference to `__asm_comisd'\n/usr/bin/aarch64-linux-gnu-ld: /tmp/code-608062.o:test:(.text+0x1cc): more undefined references to `__asm_comisd' follow\n/usr/bin/aarch64-linux-gnu-ld: /tmp/code-608062.o: in function `func0':\ntest:(.text+0x234): undefined reference to `global_var_15d'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x238): undefined reference to `global_var_15d'\nclang: error: linker command failed with exit code 1 (use -v to see invocation)\n"
+    },
+    {
+      "problem": "problem83",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:42.359054",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem83-arm"
+    },
+    {
+      "problem": "problem84",
+      "status": "success",
+      "working_tool": "retdec",
+      "timestamp": "2025-08-12T22:03:42.769998",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem84-arm"
+    },
+    {
+      "problem": "problem85",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:43.042975",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem85-arm"
+    },
+    {
+      "problem": "problem86",
+      "status": "success",
+      "working_tool": "retdec",
+      "timestamp": "2025-08-12T22:03:43.451412",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem86-arm"
+    },
+    {
+      "problem": "problem87",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:43.713189",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem87-arm"
+    },
+    {
+      "problem": "problem88",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:43.998003",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem88-arm"
+    },
+    {
+      "problem": "problem89",
+      "status": "failure",
+      "working_tool": null,
+      "timestamp": "2025-08-12T22:03:44.765294",
+      "error": "QEMU execution failed: problem89-arm: /home/jad/asm-to-asm/humaneval/problem89/test.c:38: int main(): Assertion `issame(result, result_size, (int[]){0, 11, 15, 32, 42, 87}, 6)' failed.\nqemu: uncaught target signal 6 (Aborted) - core dumped\n"
+    },
+    {
+      "problem": "problem90",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:45.010883",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem90-arm"
+    },
+    {
+      "problem": "problem91",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:45.236974",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem91-arm"
+    },
+    {
+      "problem": "problem92",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:45.496483",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem92-arm"
+    },
+    {
+      "problem": "problem93",
+      "status": "failure",
+      "working_tool": null,
+      "timestamp": "2025-08-12T22:03:45.906486",
+      "error": "ARM cross-compilation failed: warning: overriding the module target triple with aarch64-unknown-linux-gnu [-Woverride-module]\n1 warning generated.\n/usr/bin/aarch64-linux-gnu-ld: /tmp/code-beb57c.o: in function `func0':\ntest:(.text+0x4): undefined reference to `__asm_movss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x8): undefined reference to `__asm_movss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0xc): undefined reference to `__asm_movss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x1c): undefined reference to `__asm_ucomiss'\nclang: error: linker command failed with exit code 1 (use -v to see invocation)\n"
+    },
+    {
+      "problem": "problem94",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:46.150732",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem94-arm"
+    },
+    {
+      "problem": "problem95",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:46.404969",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem95-arm"
+    },
+    {
+      "problem": "problem96",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:46.661691",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem96-arm"
+    },
+    {
+      "problem": "problem97",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:46.941833",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem97-arm"
+    },
+    {
+      "problem": "problem98",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:47.183922",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem98-arm"
+    },
+    {
+      "problem": "problem99",
+      "status": "success",
+      "working_tool": "retdec",
+      "timestamp": "2025-08-12T22:03:47.598894",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem99-arm"
+    },
+    {
+      "problem": "problem100",
+      "status": "failure",
+      "working_tool": null,
+      "timestamp": "2025-08-12T22:03:47.997779",
+      "error": "ARM cross-compilation failed: warning: overriding the module target triple with aarch64-unknown-linux-gnu [-Woverride-module]\n1 warning generated.\n/usr/bin/aarch64-linux-gnu-ld: /tmp/code-ded643.o: in function `func0':\ntest:(.text+0x14): undefined reference to `__asm_pxor'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x18): undefined reference to `__asm_comisd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x20): undefined reference to `__asm_addsd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x30): undefined reference to `__asm_movsd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x40): undefined reference to `__asm_movsd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x54): undefined reference to `__asm_movapd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x60): undefined reference to `__asm_andpd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x74): undefined reference to `__asm_ucomisd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x80): undefined reference to `__asm_cvttsd2si'\nclang: error: linker command failed with exit code 1 (use -v to see invocation)\n"
+    },
+    {
+      "problem": "problem101",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:48.268229",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem101-arm"
+    },
+    {
+      "problem": "problem102",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:48.500841",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem102-arm"
+    },
+    {
+      "problem": "problem103",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:48.746901",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem103-arm"
+    },
+    {
+      "problem": "problem104",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:48.995300",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem104-arm"
+    },
+    {
+      "problem": "problem105",
+      "status": "success",
+      "working_tool": "retdec",
+      "timestamp": "2025-08-12T22:03:49.674336",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem105-arm"
+    },
+    {
+      "problem": "problem106",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:49.972049",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem106-arm"
+    },
+    {
+      "problem": "problem107",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:50.234037",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem107-arm"
+    },
+    {
+      "problem": "problem108",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:50.516405",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem108-arm"
+    },
+    {
+      "problem": "problem109",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:03:50.770456",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem109-arm"
+    },
+    {
+      "problem": "problem110",
+      "status": "success",
+      "working_tool": "retdec",
+      "timestamp": "2025-08-12T22:03:51.205912",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem110-arm"
+    },
+    {
+      "problem": "problem111",
+      "status": "failure",
+      "working_tool": null,
+      "timestamp": "2025-08-12T22:03:51.857805",
+      "error": "QEMU execution failed: qemu: uncaught target signal 11 (Segmentation fault) - core dumped\n"
+    },
+    {
+      "problem": "problem112",
+      "status": "failure",
+      "working_tool": null,
+      "timestamp": "2025-08-12T22:04:22.228022",
+      "error": "ARM cross-compilation failed: warning: overriding the module target triple with aarch64-unknown-linux-gnu [-Woverride-module]\n1 warning generated.\n/usr/bin/aarch64-linux-gnu-ld: /tmp/code-4ec10c.o: in function `func0':\ntest:(.text+0x8): undefined reference to `__readfsqword'\nclang: error: linker command failed with exit code 1 (use -v to see invocation)\n"
+    },
+    {
+      "problem": "problem113",
+      "status": "failure",
+      "working_tool": null,
+      "timestamp": "2025-08-12T22:04:22.914295",
+      "error": "QEMU execution failed: problem113-arm: /home/jad/asm-to-asm/humaneval/problem113/test.c:10: int main(): Assertion `strcmp(result, \"bcd\") == 0 && strcmp(palindrome, \"False\") == 0' failed.\nqemu: uncaught target signal 6 (Aborted) - core dumped\n"
+    },
+    {
+      "problem": "problem114",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:04:23.187492",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem114-arm"
+    },
+    {
+      "problem": "problem115",
+      "status": "failure",
+      "working_tool": null,
+      "timestamp": "2025-08-12T22:04:23.871413",
+      "error": "QEMU execution failed: problem115-arm: /home/jad/asm-to-asm/humaneval/problem115/test.c:9: int main(): Assertion `func0(nums2, 3) == -6' failed.\nqemu: uncaught target signal 6 (Aborted) - core dumped\n"
+    },
+    {
+      "problem": "problem116",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:04:24.160678",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem116-arm"
+    },
+    {
+      "problem": "problem117",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:04:24.422492",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem117-arm"
+    },
+    {
+      "problem": "problem118",
+      "status": "failure",
+      "working_tool": null,
+      "timestamp": "2025-08-12T22:04:24.845468",
+      "error": "ARM cross-compilation failed: /home/jad/asm-to-asm/combined-x86-arm/artifacts/retdec/problem118/code.o.ll:213:3: error: wrong number of indexes, expected 7\n  213 |   uselistorder i64 0, { 5, 8, 6, 7, 4, 0, 1, 2, 3 }\n      |   ^\n1 error generated.\n"
+    },
+    {
+      "problem": "problem119",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:04:25.115772",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem119-arm"
+    },
+    {
+      "problem": "problem120",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:04:25.420874",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem120-arm"
+    },
+    {
+      "problem": "problem121",
+      "status": "failure",
+      "working_tool": null,
+      "timestamp": "2025-08-12T22:04:26.106752",
+      "error": "QEMU execution failed: problem121-arm: /home/jad/asm-to-asm/humaneval/problem121/test.c:18: int main(): Assertion `issame(out1, expected1, 3)' failed.\nqemu: uncaught target signal 6 (Aborted) - core dumped\n"
+    },
+    {
+      "problem": "problem122",
+      "status": "success",
+      "working_tool": "retdec",
+      "timestamp": "2025-08-12T22:04:26.504646",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem122-arm"
+    },
+    {
+      "problem": "problem123",
+      "status": "failure",
+      "working_tool": null,
+      "timestamp": "2025-08-12T22:04:27.148279",
+      "error": "QEMU execution failed: problem123-arm: /home/jad/asm-to-asm/humaneval/problem123/test.c:6: int main(): Assertion `func0(test1, 3) == -4' failed.\nqemu: uncaught target signal 6 (Aborted) - core dumped\n"
+    },
+    {
+      "problem": "problem124",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:04:27.433239",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem124-arm"
+    },
+    {
+      "problem": "problem125",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:04:27.700448",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem125-arm"
+    },
+    {
+      "problem": "problem126",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:04:27.970476",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem126-arm"
+    },
+    {
+      "problem": "problem127",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:04:28.223298",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem127-arm"
+    },
+    {
+      "problem": "problem128",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:04:28.482844",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem128-arm"
+    },
+    {
+      "problem": "problem129",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:04:28.748441",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem129-arm"
+    },
+    {
+      "problem": "problem130",
+      "status": "success",
+      "working_tool": "retdec",
+      "timestamp": "2025-08-12T22:04:29.262747",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem130-arm"
+    },
+    {
+      "problem": "problem131",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:04:29.538442",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem131-arm"
+    },
+    {
+      "problem": "problem132",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:04:29.788320",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem132-arm"
+    },
+    {
+      "problem": "problem133",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:04:30.021165",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem133-arm"
+    },
+    {
+      "problem": "problem134",
+      "status": "failure",
+      "working_tool": null,
+      "timestamp": "2025-08-12T22:04:30.445316",
+      "error": "ARM cross-compilation failed: warning: overriding the module target triple with aarch64-unknown-linux-gnu [-Woverride-module]\n1 warning generated.\n/usr/bin/aarch64-linux-gnu-ld: /tmp/code-cad5a5.o: in function `func0':\ntest:(.text+0x34): undefined reference to `__asm_movss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x48): undefined reference to `__asm_movss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x5c): undefined reference to `__asm_movss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x90): undefined reference to `__asm_cvttss2si'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0xb4): undefined reference to `__asm_movss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0xc0): undefined reference to `__asm_movaps'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0xcc): undefined reference to `__asm_andps'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0xe8): undefined reference to `__asm_ucomiss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0xf8): undefined reference to `__asm_cvttss2si'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x110): undefined reference to `__asm_pxor'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x11c): undefined reference to `__asm_movaps'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x12c): undefined reference to `__asm_cvtsi2ss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x148): undefined reference to `__asm_cmpnless'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x150): undefined reference to `__asm_andps'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x164): undefined reference to `__asm_addss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x178): undefined reference to `__asm_movaps'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x184): undefined reference to `__asm_andnps'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x198): undefined reference to `__asm_movaps'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x1a8): undefined reference to `__asm_orps'\nclang: error: linker command failed with exit code 1 (use -v to see invocation)\n"
+    },
+    {
+      "problem": "problem135",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:04:30.691508",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem135-arm"
+    },
+    {
+      "problem": "problem136",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:04:30.945283",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem136-arm"
+    },
+    {
+      "problem": "problem137",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:04:31.202136",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem137-arm"
+    },
+    {
+      "problem": "problem138",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:04:31.444034",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem138-arm"
+    },
+    {
+      "problem": "problem139",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:04:31.685274",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem139-arm"
+    },
+    {
+      "problem": "problem140",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:04:31.939562",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem140-arm"
+    },
+    {
+      "problem": "problem141",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:04:32.201990",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem141-arm"
+    },
+    {
+      "problem": "problem142",
+      "status": "failure",
+      "working_tool": null,
+      "timestamp": "2025-08-12T22:04:32.679264",
+      "error": "ARM cross-compilation failed: /home/jad/asm-to-asm/combined-x86-arm/artifacts/retdec/problem142/code.o.ll:151:3: error: wrong number of indexes, expected 2\n  151 |   uselistorder i64 0, { 2, 3, 4, 5, 0, 1, 6, 7 }\n      |   ^\n1 error generated.\n"
+    },
+    {
+      "problem": "problem143",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:04:32.926847",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem143-arm"
+    },
+    {
+      "problem": "problem144",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:04:33.194402",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem144-arm"
+    },
+    {
+      "problem": "problem145",
+      "status": "failure",
+      "working_tool": null,
+      "timestamp": "2025-08-12T22:04:33.798159",
+      "error": "ARM cross-compilation failed: warning: overriding the module target triple with aarch64-unknown-linux-gnu [-Woverride-module]\n1 warning generated.\n/usr/bin/aarch64-linux-gnu-ld: /tmp/code-325200.o: in function `func0':\ntest:(.text+0x4): undefined reference to `__readfsqword'\nclang: error: linker command failed with exit code 1 (use -v to see invocation)\n"
+    },
+    {
+      "problem": "problem146",
+      "status": "failure",
+      "working_tool": null,
+      "timestamp": "2025-08-12T22:04:34.282716",
+      "error": "ARM cross-compilation failed: warning: overriding the module target triple with aarch64-unknown-linux-gnu [-Woverride-module]\n1 warning generated.\n/usr/bin/aarch64-linux-gnu-ld: /tmp/code-607197.o: in function `func0':\ntest:(.text+0x28): undefined reference to `__readfsqword'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x1d8): undefined reference to `__readfsqword'\nclang: error: linker command failed with exit code 1 (use -v to see invocation)\n"
+    },
+    {
+      "problem": "problem147",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:04:34.535942",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem147-arm"
+    },
+    {
+      "problem": "problem148",
+      "status": "failure",
+      "working_tool": null,
+      "timestamp": "2025-08-12T22:04:35.137647",
+      "error": "ARM cross-compilation failed: warning: overriding the module target triple with aarch64-unknown-linux-gnu [-Woverride-module]\n1 warning generated.\n/usr/bin/aarch64-linux-gnu-ld: /tmp/code-a0b1f7.o: in function `func0':\ntest:(.text+0x2dc): undefined reference to `__asm_rep_stosd_memset'\nclang: error: linker command failed with exit code 1 (use -v to see invocation)\n"
+    },
+    {
+      "problem": "problem149",
+      "status": "failure",
+      "working_tool": null,
+      "timestamp": "2025-08-12T22:04:35.719299",
+      "error": "ARM cross-compilation failed: warning: overriding the module target triple with aarch64-unknown-linux-gnu [-Woverride-module]\n1 warning generated.\n/usr/bin/aarch64-linux-gnu-ld: /tmp/code-ee6cfb.o: in function `func0':\ntest:(.text+0x28): undefined reference to `__readfsqword'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x124): undefined reference to `__readfsqword'\nclang: error: linker command failed with exit code 1 (use -v to see invocation)\n"
+    },
+    {
+      "problem": "problem150",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:04:36.005190",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem150-arm"
+    },
+    {
+      "problem": "problem151",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:04:36.266059",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem151-arm"
+    },
+    {
+      "problem": "problem152",
+      "status": "failure",
+      "working_tool": null,
+      "timestamp": "2025-08-12T22:04:36.705118",
+      "error": "ARM cross-compilation failed: warning: overriding the module target triple with aarch64-unknown-linux-gnu [-Woverride-module]\n1 warning generated.\n/usr/bin/aarch64-linux-gnu-ld: /tmp/code-b24321.o: in function `func0':\ntest:(.text+0x2c): undefined reference to `global_var_c0'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x34): undefined reference to `global_var_c0'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x80): undefined reference to `__asm_movss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x8c): undefined reference to `__asm_movaps'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0xa0): undefined reference to `__asm_movss.1'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0xb0): undefined reference to `__asm_movss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0xcc): undefined reference to `__asm_pxor'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0xe0): undefined reference to `__asm_pxor'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0xf4): undefined reference to `__asm_movsd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x10c): undefined reference to `__asm_cvtss2sd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x120): undefined reference to `__asm_cvtss2sd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x12c): undefined reference to `__asm_subsd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x134): undefined reference to `__asm_andpd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x150): undefined reference to `__asm_comisd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x164): undefined reference to `__asm_pxor'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x17c): undefined reference to `__asm_comiss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x184): undefined reference to `__asm_cvttss2si'\nclang: error: linker command failed with exit code 1 (use -v to see invocation)\n"
+    },
+    {
+      "problem": "problem153",
+      "status": "success",
+      "working_tool": "retdec",
+      "timestamp": "2025-08-12T22:04:37.146736",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem153-arm"
+    },
+    {
+      "problem": "problem154",
+      "status": "failure",
+      "working_tool": null,
+      "timestamp": "2025-08-12T22:04:37.687993",
+      "error": "QEMU execution failed: qemu: uncaught target signal 11 (Segmentation fault) - core dumped\n"
+    },
+    {
+      "problem": "problem155",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:04:37.943716",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem155-arm"
+    },
+    {
+      "problem": "problem156",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:04:38.208426",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem156-arm"
+    },
+    {
+      "problem": "problem157",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:04:38.473120",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem157-arm"
+    },
+    {
+      "problem": "problem158",
+      "status": "failure",
+      "working_tool": null,
+      "timestamp": "2025-08-12T22:04:38.859711",
+      "error": "ARM cross-compilation failed: warning: overriding the module target triple with aarch64-unknown-linux-gnu [-Woverride-module]\n1 warning generated.\n/usr/bin/aarch64-linux-gnu-ld: /tmp/code-0e6610.o: in function `func0':\ntest:(.text+0x18): undefined reference to `__asm_movaps'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x2c): undefined reference to `__asm_movsd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x40): undefined reference to `__asm_movss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x54): undefined reference to `__asm_mulss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x60): undefined reference to `__asm_mulss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x6c): undefined reference to `__asm_mulss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x80): undefined reference to `__asm_movaps'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x8c): undefined reference to `__asm_addss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x98): undefined reference to `__asm_subss'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0xa4): undefined reference to `__asm_andps'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0xa8): undefined reference to `__asm_cvtss2sd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0xbc): undefined reference to `__asm_comisd'\nclang: error: linker command failed with exit code 1 (use -v to see invocation)\n"
+    },
+    {
+      "problem": "problem159",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:04:39.113738",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem159-arm"
+    },
+    {
+      "problem": "problem160",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:04:39.368760",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem160-arm"
+    },
+    {
+      "problem": "problem161",
+      "status": "failure",
+      "working_tool": null,
+      "timestamp": "2025-08-12T22:04:40.122409",
+      "error": "ARM cross-compilation failed: warning: overriding the module target triple with aarch64-unknown-linux-gnu [-Woverride-module]\n1 warning generated.\n/usr/bin/aarch64-linux-gnu-ld: /tmp/code-e42840.o: in function `func0':\ntest:(.text+0xec): undefined reference to `__asm_pxor'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x100): undefined reference to `__asm_pxor'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x108): undefined reference to `__asm_cvtsi2sd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x11c): undefined reference to `__asm_cvtsi2sd'\n/usr/bin/aarch64-linux-gnu-ld: test:(.text+0x134): undefined reference to `__asm_cvttsd2si'\nclang: error: linker command failed with exit code 1 (use -v to see invocation)\n"
+    },
+    {
+      "problem": "problem162",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:04:40.389211",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem162-arm"
+    },
+    {
+      "problem": "problem163",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:04:40.665295",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem163-arm"
+    },
+    {
+      "problem": "problem164",
+      "status": "success",
+      "working_tool": "mctoll",
+      "timestamp": "2025-08-12T22:04:40.942086",
+      "selected_binary_path": "/home/jad/asm-to-asm/combined-x86-arm/successful_exe/problem164-arm"
+    }
+  ]
+}

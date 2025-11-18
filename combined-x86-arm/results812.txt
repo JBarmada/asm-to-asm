@@ -1,0 +1,46 @@
+Comparison Summary: LLM vs. Mctoll+RetDec
+=========================================
+
+Total Unique Problems Analyzed: 164
+
+LLM Success Rate: 74/164 = 45.12%
+Mctoll+RetDec Success Rate: 119/164 = 72.56%
+
+--------------------------------------------------
+I. Problems Attempted by BOTH (164 total)
+--------------------------------------------------
+  - Both Succeeded: 58 problems
+    Problems: problem13, problem14, problem16, problem17, problem24, problem26, problem30, problem31, problem32, problem39, problem42, problem43, problem49, problem52, problem53, problem54, problem55, problem57, problem59, problem61, problem62, problem66, problem67, problem69, problem70, problem73, problem74, problem75, problem78, problem79, problem83, problem84, problem88, problem94, problem95, problem97, problem98, problem102, problem103, problem104, problem106, problem108, problem110, problem114, problem122, problem128, problem132, problem135, problem138, problem139, problem143, problem147, problem151, problem153, problem155, problem157, problem159, problem160
+
+  - Both Failed: 29 problems
+    Problems: problem7, problem18, problem20, problem21, problem22, problem33, problem36, problem38, problem45, problem47, problem51, problem56, problem64, problem72, problem82, problem89, problem93, problem112, problem113, problem118, problem142, problem145, problem146, problem148, problem149, problem152, problem154, problem158, problem161
+
+  - LLM Succeeded, Mctoll+RetDec Failed: 16 problems
+    Problems: problem1, problem2, problem3, problem4, problem5, problem6, problem46, problem48, problem58, problem80, problem100, problem111, problem115, problem121, problem123, problem134
+
+  - Mctoll+RetDec Succeeded, LLM Failed: 61 problems
+    Problems: problem8, problem9, problem10, problem11, problem12, problem15, problem19, problem23, problem25, problem27, problem28, problem29, problem34, problem35, problem37, problem40, problem41, problem44, problem50, problem60, problem63, problem65, problem68, problem71, problem76, problem77, problem81, problem85, problem86, problem87, problem90, problem91, problem92, problem96, problem99, problem101, problem105, problem107, problem109, problem116, problem117, problem119, problem120, problem124, problem125, problem126, problem127, problem129, problem130, problem131, problem133, problem136, problem137, problem140, problem141, problem144, problem150, problem156, problem162, problem163, problem164
+
+--------------------------------------------------
+II. Problems Attempted ONLY by LLM (0 total)
+--------------------------------------------------
+  - Succeeded: 0 problems
+    Problems: None
+
+  - Failed: 0 problems
+    Problems: None
+
+--------------------------------------------------
+III. Problems Attempted ONLY by Mctoll+RetDec (0 total)
+--------------------------------------------------
+  - Succeeded: 0 problems
+    Problems: None
+
+  - Failed: 0 problems
+    Problems: None
+
+--------------------------------------------------
+VERIFICATION
+--------------------------------------------------
+Total in Categories: 164
+Matches Total Problems: True

@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "timestamp": "2025-08-18T12:07:09.380199",
+    "optimization_level": "O2",
+    "total_problems": 1,
+    "total_successes": 0,
+    "total_failures": 1,
+    "mctoll_successes": 0,
+    "retdec_successes": 0,
+    "successful_exe_dir": "/home/jad/asm-to-asm/combined-x86-arm/BUsuccessful_exe"
+  },
+  "results": [
+    {
+      "problem": "fft-int",
+      "status": "failure",
+      "working_tool": null,
+      "timestamp": "2025-08-18T12:07:09.380002",
+      "error": "ARM cross-compilation failed: /home/jad/asm-to-asm/combined-x86-arm/BUartifacts/retdec/fft-int/fft-int.ll:643:17: error: or constexprs are no longer supported\n  643 |   %7 = sdiv i64 or (i64 shl (i64 zext (i32 ashr (i32 ptrtoint (i32* @global_var_400 to i32), i32 31) to i64), i64 32), i64 zext (i32 ptrtoint (i32* @global_var_400 to i32) to i64)), %6, !insn.addr !161\n      |                 ^\n1 error generated.\n"
+    }
+  ]
+}

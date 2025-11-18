@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "timestamp": "2025-08-18T01:08:11.332229",
+    "optimization_level": "O2",
+    "total_problems": 1,
+    "total_successes": 0,
+    "total_failures": 1,
+    "mctoll_successes": 0,
+    "retdec_successes": 0,
+    "successful_exe_dir": "/home/jad/asm-to-asm/combined-x86-arm/BUsuccessful_exe"
+  },
+  "results": [
+    {
+      "problem": "quine",
+      "status": "failure",
+      "working_tool": null,
+      "timestamp": "2025-08-18T01:08:11.332060",
+      "error": "ARM cross-compilation failed: /home/jad/asm-to-asm/combined-x86-arm/BUartifacts/retdec/quine/quine.bc:1:1: error: expected top-level entity\n    1 | //\n      | ^\n1 error generated.\n"
+    }
+  ]
+}
